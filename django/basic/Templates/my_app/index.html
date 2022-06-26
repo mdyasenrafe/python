@@ -7,6 +7,19 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>This is Blog html</h1>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+      {% for row in students %}
+      <tr>
+        <td>{{ row.name }}</td>
+        <td>{{ row.age }}</td>
+        <td>{{ row.email }}</td>
+      </tr>
+      {% endfor %}
+    </table>
   </body>
 </html>
