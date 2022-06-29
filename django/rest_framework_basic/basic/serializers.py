@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from basic.models import Contact
+from basic.models import Contact,  User
 
 
 class contact_serializer(serializers.ModelSerializer):
@@ -7,4 +7,7 @@ class contact_serializer(serializers.ModelSerializer):
             model = Contact
             fields = ['name' , 'email' , 'message']
 
-        
+class user_serializer(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = ['name' , 'email' , 'password']
