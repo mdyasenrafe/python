@@ -19,3 +19,7 @@ for fruit in fruits :
     if(fruit ==  "orange"):
         break
     print(fruit)
+
+a="Bd"
+for i in range(len(a)):
+    print(a[i],end="")
