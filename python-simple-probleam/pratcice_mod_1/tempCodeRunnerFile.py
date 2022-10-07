@@ -1,0 +1,1 @@
+or res == 'e' or res == 'i' or res == 'o' or res 'u'
