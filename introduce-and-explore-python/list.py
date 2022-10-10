@@ -1,4 +1,5 @@
 names =['hablu' ,'boltu' , 'naltu','jaltu' ,'taltu']
+print(names[4:0:-1])
 # display names
 # print(names)
 # length names
@@ -14,25 +15,25 @@ names.insert( 5 ,"coltu") #The insert() method inserts an item at the specified 
 
 #
 nayoks = ['sakib khan' ,'bappy']
-# display nayoks
-print(nayoks)
+# # display nayoks
+# print(nayoks)
 
-# Append Items
-nayoks.append("manna") 
-print(nayoks)
+# # Append Items
+# nayoks.append("manna") 
+# print(nayoks)
 
-#Remove Specified Item
-nayoks.remove("bappy")
-print("remove" ,nayoks )
+# #Remove Specified Item
+# nayoks.remove("bappy")
+# print("remove" ,nayoks )
 
-# pop
-nayoks.pop()
-print("remove" ,nayoks)
+# # pop
+# nayoks.pop()
+# print("remove" ,nayoks)
 
-# Extend List
-nayoks.extend(names)
-print("extends" , nayoks)
+# # Extend List
+# nayoks.extend(names)
+# print("extends" , nayoks)
 
-# Sort
-nayoks.sort()
-print("sorting", nayoks)
+# # Sort
+# nayoks.sort()
+# print("sorting", nayoks)
