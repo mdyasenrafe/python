@@ -1,3 +1,2 @@
-# Extend List
-nayoks.extend(names)
-print("extends" , nayoks)
+
+for x in range(len(list1)):
