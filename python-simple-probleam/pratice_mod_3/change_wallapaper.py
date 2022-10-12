@@ -1,5 +1,5 @@
-# import requests
-# import json
+import requests
+import json
 import PyWallpaper
 
 api_url = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'
@@ -14,6 +14,7 @@ image_res = requests.get(image_url)
 
 with open("apod.png", 'wb') as image:
     image.write(image_res.content)
+
 
 PyWallpaper.change_wallpaper('/apod.png')
 print("working")
