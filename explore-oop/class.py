@@ -1,12 +1,14 @@
 class Phone:
-    brand = "Apple"
-    model = "iPhone 12"
-    features = ["Touch ID", "Face ID", "A14 Bionic Chip", "5G"]
-    price = 1000
+    def __init__(self, brand, model, price):
+        self.brand = brand
+        self.model = model
+        self.price = price
 
-    def call(self, text):
-        return f'ring ring {text}'
+    def increase_price(self, amount):
+        self.last_price = self.price
+        self.price = self.price + amount
 
 
-my_phone = Phone()
-print(my_phone.call("rafe"))
+my_phone = Phone("Apple", "iPhone 12", 80000)
+my_phone.increase_price(1000)
+print(my_phone.__dict__)
