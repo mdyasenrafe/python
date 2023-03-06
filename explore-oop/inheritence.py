@@ -4,6 +4,9 @@ class Device:
         self.price = price
         self.color = color
 
+    def start(self):
+        print('Starting device')
+
 
 class Laptop(Device):
     def __init__(self, band, price, color, disk_size):
@@ -56,6 +59,6 @@ class Watch(Device):
 oppo = Phone('Oppo', 1000, 'black', '4G', 2)
 macbook = Laptop('Macbook', 2000, 'silver', 500)
 apple_watch = Watch('Apple', 500, 'black', 'digital')
-print(oppo)
+oppo.start()
 print(macbook)
 print(apple_watch)
